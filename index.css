@@ -1,0 +1,187 @@
+@-webkit-keyframes fade-in1 {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    20% {
+        opacity: 0;
+        translate: 20px 0;
+        transform: translateY(10px);
+    }
+
+    100% {
+        opacity: 1;
+        translate: 0px 0;
+        transform: translateY(0px);
+    }
+}
+
+@-webkit-keyframes fade-in2 {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    30% {
+        opacity: 0;
+        translate: 20px 0;
+        transform: translateY(10px);
+    }
+
+    100% {
+        opacity: 1;
+        translate: 0px 0;
+        transform: translateY(0px);
+    }
+}
+
+@-webkit-keyframes fade-in3 {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    40% {
+        opacity: 0;
+        translate: 20px 0;
+        transform: translateY(10px);
+    }
+
+    100% {
+        opacity: 1;
+        translate: 0px 0;
+        transform: translateY(0px);
+    }
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.page-container {
+    display: flex;
+    justify-content: center;
+}
+
+.list {
+    /* display: flex; */
+    flex-wrap: wrap;
+    width: 810px;
+}
+
+.card {
+    display: inline-block;
+    width: 400px;
+    height: 630px;
+    position: relative;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.card-open {}
+
+.card-left {
+    margin-bottom: 120px;
+}
+
+.card-right {
+    margin-top: 120px;
+}
+
+.card-img {
+    width: 300px;
+    position: absolute;
+    top: 0;
+    right: 50px;
+    transition: all 0.3s;
+    transform-origin: right top;
+}
+
+.card-block {
+    width: 360px;
+    height: 400px;
+    position: absolute;
+    top: 150px;
+    left: 20px;
+    background-color: #f4edec;
+    transition: all 0.3s;
+    transform-origin: left top;
+}
+
+.card-whiteblock {
+    width: 360px;
+    height: 150px;
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    background-color: #ffffff;
+    transition: all 0.3s;
+    transform-origin: left top;
+}
+
+.card-title {
+    margin: 0;
+    position: absolute;
+    font-size: 24px;
+    top: 555px;
+    left: 20px;
+    transition: all 0.3s;
+}
+
+.card-subtitle {
+    margin: 0;
+    position: absolute;
+    font-size: 14px;
+    top: 590px;
+    left: 20px;
+    letter-spacing: 4px;
+    transition: all 0.3s;
+}
+
+.card-close {
+    position: fixed;
+    display: none;
+    right: 10px;
+    top: 10px;
+    -webkit-animation: fade-in1 0.6s;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.card-title2 {
+    margin: 0;
+    position: fixed;
+    display: none;
+    font-size: 40px;
+    left: 10vw;
+    bottom: calc(60vh + 20px);
+    -webkit-animation: fade-in1 0.6s;
+    z-index: 100;
+}
+
+.card-subtitle2 {
+    margin: 0;
+    position: fixed;
+    display: none;
+    font-size: 24px;
+    left: 10vw;
+    top: calc(40vh + 20px);
+    letter-spacing: 8px;
+    -webkit-animation: fade-in3 0.6s;
+    z-index: 100;
+
+}
+
+.card-smblock {
+    position: fixed;
+    display: none;
+    left: 10vw;
+    height: 20px;
+    width: 100px;
+    background-color: black;
+    top: calc(40vh - 10px);
+    -webkit-animation: fade-in2 0.6s;
+    z-index: 100;
+
+}
